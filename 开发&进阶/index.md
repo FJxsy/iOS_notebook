@@ -2,7 +2,7 @@
 
 * [UI控件](UI控件/index.md)
 
-	* [自定义View的几种方式](UI控件/自定义View的几种方式.md)
+	- [自定义View的几种方式](UI控件/自定义View的几种方式.md)
 * [功能](功能/index.md)
 * [模块化方案](模块化方案/index.md)
 
