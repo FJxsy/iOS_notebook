@@ -46,4 +46,4 @@
 
 ## 手册大纲
 
-![note](./总目录/iOS开发手册v1.0.png)
+![note](./main/iOS开发手册v1.0.png)
