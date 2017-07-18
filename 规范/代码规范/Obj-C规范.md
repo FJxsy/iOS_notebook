@@ -246,4 +246,4 @@
 # Ⅲ、<span id = "Ⅲ">TODO：</span>
 后续需要继续完善的部分
 
-![pic](规范V1.0.pdf)
+![pic](规范V1.0.png)

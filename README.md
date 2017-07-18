@@ -10,8 +10,9 @@
 
 | 开发人员 | 站点| 其它 |
 |--- | --- | --- |
-|[pan zhow](https://github.com/PanZhow)| IT互联网自习室(公众号)| 尚无 |
-| 待追加 | | |
+|[pan zhow]()| IT互联网自习室(公众号)| [github](https://github.com/PanZhow) |
+| [wang111588]() |. | [github](https://github.com/wang111588)|
+| [GoodbyeCain]() | .|[github](https://github.com/GoodbyeCain) |
 
 ## 贡献方式
 
