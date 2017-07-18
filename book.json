@@ -10,7 +10,6 @@
         "readme": "README.md"
     },
   "plugins": [
-    "disqus",
     "-lunr",
     "-search",
     "-highlight",
@@ -40,9 +39,6 @@
                 "instapaper"
             ]
         },
-    "disqus": {
-      "shortName": "iOS_notebook"
-    },
     "github": {
       "url": "https://github.com/PanZhow/iOS_notebook"
     },
