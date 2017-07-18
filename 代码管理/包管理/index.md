@@ -1,5 +1,2 @@
-## 包管理
+# 包管理
 
-* [CocoaPods]()
-* [Carthage]()
-* [Swift Package Manager]()
