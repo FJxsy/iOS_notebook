@@ -1,0 +1,31 @@
+//
+//  IOSMatrix-Prefix.pch
+//  IOSMatrix
+//
+//  Created by zhoupanpan on 2017/7/21.
+//  Copyright © 2017年 panzhow. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "IMXDebugCommon.h"
+
+#define IMX_DEBUG_WINDOW_WIDTH ([[[UIApplication sharedApplication] delegate] window].bounds.size.width)
+
+#define IMX_DEBUG_WINDOW_HEIGHT ([[[UIApplication sharedApplication] delegate] window].bounds.size.height)
+
+#define IMX_DEBUG_SCREEN_WIDTH (WINDOW_WIDTH)
+
+#define IMX_DEBUG_SCREEN_HEIGHT (WINDOW_HEIGHT)
+
+#define IMX_DEBUG_IOS_VERSION ([[UIDevice currentDevice] systemVersion].floatValue)
+
+#define IMX_DEBUG_IS_IOS_7 (IOS_VERSION >= 7.0f)
+
+#define IMX_DEBUG_IS_SHORT_PHONE ([UIScreen mainScreen].bounds.size.height <= 480)
+
+// compare IOS version
+#undef IMX_DEBUG_IOSVersionEqualOrLater
+#define IMX_DEBUG_IOSVersionEqualOrLater(_version) \
+(IMX_DEBUG_IOS_VERSION >= [@ #_version floatValue])
+#endif
