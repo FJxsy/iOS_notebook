@@ -219,13 +219,23 @@
 	>
 	> 一系列声明周期方法集合
 	
-4. `#pragma mark --- private --- `
+	
+4. `#pragma mark --- delegate --- `
+
+	> 一系列``自定义/系统``代理方法
+	> 
+
+5. `#pragma mark --- event --- `
+
+	> 如UIbutton点击事件
+	
+6. `#pragma mark --- private --- `
 
 	> 相对`public`而言，只在m文件中使用的自定义方法
 	
-5. `#pragma mark --- delegate --- `
+7. `#pragma mark --- getter & setter --- `
 
-	> 一系列``自定义/系统``代理方法
+	> 一系列``属性``定义方法
 	> 
 
 	
