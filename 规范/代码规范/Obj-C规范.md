@@ -205,8 +205,15 @@
 
 * **函数分组:**使用类似`#pragma mark --- <* text *>--- `方式进行分组
 
-#### 分组详情(待执行):
-根据``函数分组``方案，文件内部组织形式为：
+#### 分组详情:
+
+* **该分组模式业已提交code snippet，便于统一处理文件。**
+
+	> * 具体导入使用方法参考Github地址中`README说明`。
+	> * github地址：[snippets_tools](https://github.com/PanZhow/snippets_tools)
+
+
+**根据``函数分组``方案，文件内部组织形式为：**
 
 1. ``- (void)dealloc{}``
 2. `#pragma mark --- public --- `
