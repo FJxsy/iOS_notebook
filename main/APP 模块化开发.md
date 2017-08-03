@@ -171,10 +171,14 @@
 #### iOS实现
 
 1. 实现组件：APPLauncher
+2. 实现初始启动服务
+
+	> * 调度中心：LauncherMgr
+	> * 子类化IMXBaseLauncher，若有服务和其共同存在，则子类化同时实现service协议
 2. 通过service服务模板，执行启动事务时，加入了诸如顺序、优先级、同异步等各方面考量
 3. 需要组件、模块单独开辟启动文件
 4. 待完善：其它如hook APPDelegate，可参考TN项目、JD组件话方案
-
+5. 注：因为`+(void)load`方法在main函数之前执行，故只允许挂载组件名称，禁止其它耗时行为。
 ### 3. 消息总线
 **业务模块间消息通道**
 
@@ -444,3 +448,19 @@
 
 #### 略，详见工程开发相关文档
 
+
+
+----
+
+##附
+
+### 模板工程具备文本
+#### 一、launcher组件
+1. appLauncher功能：
+
+	> * pch文件(可选)：
+	`#import <IMXLauncher/IMXLauncher.h>`
+	> * 创建launcher文件：
+		`@interface IMXDebugModuleLauncher : IMXBaseLauncher`,并实现细节
+
+2. service功能
