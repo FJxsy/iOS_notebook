@@ -6,6 +6,8 @@
         * [Runtime](编程语言/Obj-C/Runtime/index.md)
         * [多线程](编程语言/Obj-C/多线程/index.md)
     * [Swift](编程语言/Swift/index.md)
+
+    	* [Swift3的UsedResult警告](编程语言/Swift/Swift3的UsedResult警告.md)
     * [JavaScript](编程语言/JavaScript/index.md)
         * [基础](编程语言/JavaScript/基础/index.md)
         * [js-Native交互](编程语言/JavaScript/js-Native交互/index.md)
@@ -41,7 +43,12 @@
 -----
 * [● 架构设计](架构设计/index.md)
     * [设计模式](架构设计/设计模式/index.md)
-        - [UML简介](架构设计/设计模式/UML简介.md)
+        * [UML简介](架构设计/设计模式/UML简介/index.md)
+
+        	- [uml活动图](架构设计/设计模式/UML简介/uml活动图.md)
+        	- [uml类图手册](架构设计/设计模式/UML简介/uml类图手册.md)
+        	- [uml时序](架构设计/设计模式/UML简介/uml时序.md)
+        	- [uml状态机图](架构设计/设计模式/UML简介/uml状态机图.md)
         - [AOP](架构设计/设计模式/AOP.md)
     * [架构](架构设计/架构/index.md)
         - [MVC](架构设计/架构/MVC.md)
@@ -113,8 +120,10 @@
 
 -----
 * [● 其它](其它/index.md)
-    * OmniPlan工具等
-    * DeepLearning
-    * 第三方服务
-    * 优质站点风云榜
+
+	* [Gitbook初探](其它/Gitbook初探.md)
+	* OmniPlan工具等
+ 	* DeepLearning
+  	* 第三方服务
+  	* 优质站点风云榜
 
