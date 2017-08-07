@@ -1,6 +1,7 @@
 ## 提要
 
 * MVIP模式属于MVP的一种尝试。即在View和Presenter之间添加了一个交互层（Interactor），主要来处理它们之间的绑定操作。
+
 ## 一、View
 
 ### 1. Render View
