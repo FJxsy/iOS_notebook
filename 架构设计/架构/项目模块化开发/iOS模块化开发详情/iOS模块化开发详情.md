@@ -2,6 +2,9 @@
 
 # 理论
 
+* 本文涉及的大多数组件尚在开发中，该文档中只是粗略带过。
+* 后续完善功能后，将以单独的组件开发文档体现出来。
+
 ## 图谱梗概
 
 ![img](APP模块化.png)
@@ -123,13 +126,14 @@
 
 	| 信息 | 功能 | demo |
 	--- | --- | --- |
-	| Target_XX文件 | 待完善| 无 |
+	| Target_XX文件 | 组件、模块路由文件| 无 |
+	| CTMediator + category | 待完善| 无 |
 
 3. 启动文件
 
 	| 信息 | 功能 | demo |
 	--- | --- | --- |
-	| 待完善 | 待完善| 无 |
+	| XXAppLauncher | 组件、模块初始化操作文件 | 无 |
 	
 4. 组件、模块功能文件
 
@@ -168,6 +172,8 @@
 1. 可跨进程，可同步/异步执行
 2. 主要事务：容器启动、类加载、核心中间件初始化
 3. 全局服务类，诸如：LBS、路由文件加载（与现有路由策略做对比分析，得出最优方案）、App更新服务、Push、埋点，timeAsync等
+
+
 #### iOS实现
 
 1. 实现组件：APPLauncher
@@ -177,20 +183,23 @@
 	> * 子类化IMXBaseLauncher，若有服务和其共同存在，则子类化同时实现service协议
 2. 通过service服务模板，执行启动事务时，加入了诸如顺序、优先级、同异步等各方面考量
 3. 需要组件、模块单独开辟启动文件
-4. 待完善：其它如hook APPDelegate，可参考TN项目、JD组件话方案
+4. 具体实现后续会有单独的文档呈现
 5. 注：因为`+(void)load`方法在main函数之前执行，故只允许挂载组件名称，禁止其它耗时行为。
+
+	> * 此处若不进行处理，那么在appDidfinshiLoad时同样要处理初始化操作，所以都会在app启动之前耗时。
+	> * 故后续需要多次验证此类情景。
 
 ### 3. 消息总线
 **业务模块间消息通道**
 
 #### 功能汇总
 
-1. TODO
+1. TODO：
 
 #### iOS实现
-1. 依据Android的`EventBus`消息机制，指定iOS端消息模块。
+1. 依据Android的`EventBus`消息机制，制定iOS端消息模块。
 
-	> 待完善
+	> TODO：
 
 
 ## 三、<span id = "基础组件">基础组件</span>
@@ -218,7 +227,7 @@
 	> * 具体说明见Obj-C规范，code snippet地址：[snippets_tools](https://github.com/PanZhow/snippets_tools)
 2. 架构模式：MVC架构作为基本架构，MVIP架构模式引导开发
 
-	> * MVIP:增强版的MVP模式
+	> * MVIP:增强版的MVP模式，后续会有相关文档
 	
 3. UI组件使用基类Ctrl
 
@@ -347,14 +356,38 @@
 1. TODO：
 
 ### (9) IM组件
+
+1. TODO：
+
+
 ### (10) push组件
+
+1. TODO：
+
+
 ### (11) 分享组件
+
+1. TODO：
+
+
 ### (12)设备信息组件
+
+1. TODO：
+
+
 ### (13) 国际化组件
 1. TODO：
 
 ### (14) 用户体系组件
+
+1. TODO：
+
+
 ### (15) AB test组件
+
+1. TODO：
+
+
 ### (16) Style Kit组件
 
 #### 功能汇总
@@ -404,7 +437,7 @@
 
 1. 该部分功能未细化
 2. 暂时放置在baseModule组件中
-3. 
+3. TODO：
 
 #### iOS实现
 
@@ -451,20 +484,3 @@
 ## 五、<span id = "业务模块">业务模块</span>
 
 #### 略，详见工程开发相关文档
-
-
-
-----
-
-##附
-
-### 模板工程具备文本
-#### 一、launcher组件
-1. appLauncher功能：
-
-	> * pch文件(可选)：
-	`#import <IMXLauncher/IMXLauncher.h>`
-	> * 创建launcher文件：
-		`@interface IMXDebugModuleLauncher : IMXBaseLauncher`,并实现细节
-
-2. service功能
