@@ -125,7 +125,7 @@
         * Teambition、Scrum
         * checklist，项目复盘
     * [PM](产品管理/PM/index.md)
-        * OKR解析、SMART原则
+        - [术语解读](产品管理/PM/mgr/术语解读.md)
     * [UED](产品管理/UED/index.md)
         * 工具使用：PaintCode、Sketch
 
